@@ -9,7 +9,7 @@ namespace Decorator_Heladería
     public class ChipsChocolate:AgregadoDecorator
     {
         public ChipsChocolate(HeladoComponent helado) : base(helado) { }
-        public override double Costo => _helado.Costo+0.25;
+        public override double Costo => _helado.Costo+0.25; // Agrega al costo calculado previamente el valor de Chips de Chocolate
         public override string Descripcion => string.Format($"{_helado.Descripcion}\n - Chips de Chocolate");
     }
 }

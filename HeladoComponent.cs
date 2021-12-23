@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Decorator_Heladería
 {
+    // Clase Abtracta
     public abstract class HeladoComponent
     {
-        public abstract double Costo { get; }
-        public abstract string Descripcion { get; }
+        // Propiedades abstractas que solo reciben el parametro
+        public abstract double Costo { get; } // Precio
+        public abstract string Descripcion { get; } // Detalle del producto
     }
 }

@@ -8,7 +8,7 @@ namespace Decorator_Heladería
 {
     public class ConoTriple : HeladoComponent
     {
-        public override double Costo => 2.00; 
-        public override string Descripcion => "Cono Triple";
+        public override double Costo => 2.00; // Define el precio del producto
+        public override string Descripcion => "Cono Triple"; 
      }
 }

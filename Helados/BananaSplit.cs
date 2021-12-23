@@ -8,7 +8,7 @@ namespace Decorator_Heladería
 {
     public class BananaSplit: HeladoComponent
     {
-        public override double Costo => 3.00;
+        public override double Costo => 3.00; // Define el precio del producto
         public override string Descripcion => "Banana Split";
     }
 }

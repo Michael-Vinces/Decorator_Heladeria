@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Decorator_Heladería
 {
+    // Clase abstracta
     public abstract class AgregadoDecorator : HeladoComponent
     {
         protected HeladoComponent _helado; 

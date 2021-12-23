@@ -17,10 +17,13 @@ namespace Decorator_Heladería
             //    Cono Triple           Coco Rallado
             //    Banana Split           Almendras
 
+            
+            // Desea un BANANA SPLIT con dos porciones de COCO RALLADO y una porcion de Almendrás
+            
             HeladoComponent consumible =new BananaSplit();
-            consumible = new CocoRallado(consumible);
-            consumible = new CocoRallado(consumible);
-            consumible = new Almendras(consumible);
+            consumible = new CocoRallado(consumible);// Agrega una porcion de Coco Rallado
+            consumible = new CocoRallado(consumible);// Agrega otra porcion de Coco Rallado
+            consumible = new Almendras(consumible);  // Agrega una porcion de Almendras
 
             //HeladoComponent consumible1 = new ConoDoble();
             //consumible1 = new ChipsChocolate(consumible1);
@@ -28,6 +31,7 @@ namespace Decorator_Heladería
 
             Console.WriteLine($"Producto:\n{consumible.Descripcion} \nEl costo de su Helado es: ${consumible.Costo}\n");
             //Console.WriteLine($"Producto: \n{consumible1.Descripcion} \nEl costo de su Helado es: ${consumible1.Costo}");
+
             Console.ReadKey();
         }
     }
